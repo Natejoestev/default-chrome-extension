@@ -1,0 +1,35 @@
+{
+  "name": "Default",
+  "description": "Default description",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "./images/icons/default-16px.png",
+    "32": "./images/icons/default-32px.png",
+    "48": "./images/icons/default-48px.png",
+    "128": "./images/icons/default-128px.png"
+  },
+  
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "action": {
+    "default_popup": "./popup.html",
+    "default_icons": {
+      "16": "./images/icons/default-16px.png",
+      "32": "./images/icons/default-32px.png",
+      "48": "./images/icons/default-48px.png",
+      "128": "./images/icons/default-128px.png"
+    }
+  },
+  "options_page": "./options.html",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+    //"storage"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ]
+}
